@@ -1,0 +1,220 @@
+# JavaScript Questions : Basics
+
+# Q1 to create function we use the keyword ?
+
+.A : function
+/**************************************************************************************************/
+
+# Q2  Inside which HTML element do we put the JavaScript?
+
+.A :  <script>
+/*************************************************************************************************/
+
+
+# Q3 Where is the correct place to insert a JavaScript?
+
+.A : both the <head> section and the body section are correct
+/***********************************************************************************************/
+
+# Q4  What is the correct syntax for referring to an external script called "xxx.js"?    ?
+
+.B : <script src="xxx.js">
+/************************************************************************************************/
+ 
+# Q5 The external JavaScript file must contain the <script> tag?
+
+
+.B : false
+
+/*****************************************************************************************************/
+# Q6 How do you write "Hello World" in an alert box??
+
+
+
+.B : msgBox("Hello World")
+
+/**************************************************************************************************************/
+# Q7 How do you call a function named "myFunction"? 
+
+.C : myFunction()
+
+/***************************************************************************************************************/
+# Q8 Does this function always have the same output?
+function positif() {
+  const x = Math.random()
+  if (x>0) 
+  console.log('positif')
+  else 
+  conssole.log('zero')
+}
+
+.A : Yes
+
+/**************************************************//////***************************************************************/
+# Q9 Can we have another function as parameter?
+
+
+.A : Yes 
+.B : No
+.C : Depends on the JS version
+/***********************************************************************************************************************/
+# Q10    What’s this function’s output?
+function myFunction p1, p2 {
+  return p1 * p2;
+}
+
+myFunction (2,3)
+
+
+.E : Error
+
+/***************************************************************************************************************************/
+# Q11 What’s this function’s output?
+function myFunction (p1 p2) {
+  return p1 * p2;
+}
+
+myFunction (2,3)
+
+
+.A : 6
+/*************************************************************************************************************************/
+                                                                               
+# Q 12 What type of data cannot be used as a parameter
+
+
+.B :  function
+
+
+/**************************************************************************************************************************/
+
+
+
+# Q13 What’s the default return value of a function
+
+
+.B : undefined 
+
+/****************************************************************************************************************************/
+# Q14 How many return statements can we find in a function??
+
+
+.D : depends on the function
+                          
+/*****************************************************************************************************************************/
+# Q15 What’s the return value of this function? 
+
+function myFunction(a, b) {
+  a * b;
+}
+
+myFunction(4, 3)
+
+
+.C :  undefined
+
+/****************************************************************************************************************************/
+
+# Q16  What’s the return value of this function? 
+
+function greeting () {
+  if (hour < 18)
+    return ("Good day")
+  console.log("Good night")
+}
+greeting (19)
+
+
+.E : Error
+/******************************************************************************************************************************/
+# Q17 How can you add a comment in a JavaScript?
+
+.A  :  // This is a comment
+/*****************************************************************************************************************************/
+
+# Q18  How to insert a comment that has more than one line?
+                           
+.A  : /*  This comment has more than one line */
+
+/*****************************************************************************************************************************/
+# Q19  what does test() output?
+
+function test(num) {
+  console.log(num)
+}
+
+.C  : undefined
+
+/******************************************************************************************************************************/
+# Q20 What’s a recursive function? 
+
+
+.B  : A function that calls itself
+
+/******************************************************************************************************************************/
+# Q21 What does this function output? 
+
+function() {
+  var a = 10
+  if(a > 5)
+    a = 7
+  console.log(a)
+}
+
+
+.D  : undefined
+/******************************************************************************************************************************/
+# Q22 What does the following snippet output?
+
+function() {
+  var a = 10
+  if(false)
+    a = 7
+console.log(a)
+}
+
+
+.D  : undefined
+/*****************************************************************************************************************************/
+# Q23 What does the following snippet output?
+var a = 10
+function() {
+  if(true)
+    a = 7
+  console.log(a)
+}
+
+.D  : undefined
+/******************************************************************************************************************************/
+# Q24  What does the following snippet output?
+
+var a = 6
+function test() {
+  var a = 7
+  function again() {
+    var a = 8
+    console.log(a) 
+  }
+  again()
+  console.log(a) 
+}
+test()
+console.log(a)
+
+
+.C  : 8,7,6
+/***************************************************************************************************************************/
+
+# Q25 What does first ()() return?
+
+function first() {
+  var b = 8
+  function second() {
+    var a = 9
+    console.log(b) 
+  }
+console.log(a)
+return second
+}
+
+.E : Error
